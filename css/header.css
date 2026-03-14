@@ -1,0 +1,230 @@
+/* Smart Buy Store - Header Styles */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+.logo-smart {
+    color: #667eea;
+}
+
+.logo-buy {
+    color: #764ba2;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #667eea;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    width: 200px;
+    padding: 10px 40px 10px 15px;
+    border: 1px solid #eee;
+    border-radius: 25px;
+    font-size: 14px;
+    background: #f8f9fa;
+    transition: all 0.3s;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #667eea;
+    width: 250px;
+}
+
+.search-box i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.cart-icon {
+    position: relative;
+    font-size: 22px;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.cart-icon:hover {
+    color: #667eea;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .search-box input {
+        width: 150px;
+    }
+    
+    .search-box input:focus {
+        width: 180px;
+    }
+}
+
+/* Auth Links */
+.auth-links {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-login,
+.btn-register {
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-login {
+    color: #667eea;
+    border: 2px solid #667eea;
+}
+
+.btn-login:hover {
+    background: #667eea;
+    color: white;
+}
+
+.btn-register {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.btn-register:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* User Menu */
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-greeting {
+    color: #555;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.user-greeting:hover {
+    color: #667eea;
+}
+
+.user-greeting i {
+    margin-right: 5px;
+}
+
+.btn-logout {
+    color: #dc3545;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.btn-logout:hover {
+    color: #c82333;
+    transform: scale(1.1);
+}
+
+.nav-icon {
+    font-size: 20px;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.nav-icon:hover {
+    color: #667eea;
+}
+
+.admin-link {
+    color: #667eea !important;
+    font-weight: 600;
+}
+
+.admin-link i {
+    margin-right: 5px;
+}
+
+/* Responsive Auth */
+@media (max-width: 768px) {
+    .auth-links {
+        gap: 5px;
+    }
+    
+    .btn-login,
+    .btn-register {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
+    .user-greeting {
+        display: none;
+    }
+}
