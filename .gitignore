@@ -1,0 +1,13 @@
+# Ignore uploaded product images (keep folder structure)
+uploads/products/*
+!uploads/products/.gitkeep
+!uploads/.htaccess
+
+# System files
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE
+.vscode/
+.idea/
